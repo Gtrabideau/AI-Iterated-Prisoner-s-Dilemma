@@ -4,7 +4,7 @@ Description:
 This project was inspired by Axelrod's Tournament, an experiment that tested different approached to the iterated prisoner's dilemma.
 Robert Axelrod's paper on this tournament can be found here: https://www.jstor.org/stable/173932
 
-This project acts both as a smaller version of Axelrod's tournament as well as a test for a q-learning AI that will participate in the tournament. New stratagies for the tournament can be added in the 'Players.py' file and a new q-table can be trained in the 'AITrainer.py' file in the 'Q-LearningTrainer' folder. It is reccomended that this project be opened in an IDE such as PyCharm in order to more easily install the correct imports as well as navigate the files. It is also recommended that you first read about Axelrod's Tournament or at least quickly google the Iterated Prisoner's Dilemma.
+This project acts both as a smaller version of Axelrod's tournament as well as a test for a q-learning AI that will participate in the tournament. New strategies for the tournament can be added in the 'Players.py' file and a new q-table can be trained in the 'AITrainer.py' file in the 'Q-LearningTrainer' folder. It is recommended that this project be opened in an IDE such as PyCharm in order to more easily install the correct imports as well as navigate the files. It is also recommended that you first read about Axelrod's Tournament or at least quickly google the Iterated Prisoner's Dilemma.
 
 
 Project Contents:
@@ -22,10 +22,10 @@ Project Contents:
 
 
 How To Use 'AITrainer.py':
-1: Enter the location of the q-table you want to continue training into start_q_table, or put None if you are starting are starting a new q-table.
+1: Enter the location of the q-table you want to continue training into start_q_table, or put None if you are starting a new q-table.
 2: Enter the location of where you want to export the q-table, the default location is to the 'Data' folder.
 3: Adjust the HM_EPISODES, epsilon, EPS_DECAY, SHOW_EVERY, LEARNING_RATE, DISCOUNT, and ROUND_MEMORY to your preferences. I believe the default settings are near optimal.
-4: Run the python file and then then start again from step 1, replacing start_q_table with the path to your file. Make sure ROUND_MEMORY is set to same number it was when that q-table file was trained. For best results train the same q-table multiple times.
+4: Run the python file and then start again from step 1, replacing start_q_table with the path to your file. Make sure ROUND_MEMORY is set to the same number it was when that q-table file was trained. For best results, train the same q-table multiple times.
 
 
 How To Use 'Main.py':
@@ -43,7 +43,7 @@ Random: Will randomly defect or cooperate
 
 Grudge: Will always cooperate until its opponent defects, at which point Grudge will always defect no matter what
 
-TitForTat: Will start with cooperate, but will make the same choice as its opponent last choice.
+TitForTat: Will start with cooperation, but will make the same choice as its opponent last choice.
 
 Forgiving: Will act like TitForTat, but will sometimes cooperate instead of defecting, even if the opponent defected last round. 
 
